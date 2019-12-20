@@ -1,0 +1,22 @@
+name: Windows
+
+on: [push]
+
+jobs:
+  build:
+
+    runs-on: windows-latest
+
+    steps:
+    - name: Set up Go 1.13
+      uses: actions/setup-go@v1
+      with:
+        go-version: 1.13
+      id: go
+    - uses: actions/checkout@v1
+    - name: Build
+      run: make cross
+    - uses: actions/upload-artifact@v1
+      with:
+        name: artifacts-windows
+        path: out/
