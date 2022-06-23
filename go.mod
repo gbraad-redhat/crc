@@ -20,6 +20,7 @@ require (
 	github.com/cucumber/godog v0.9.0
 	github.com/cucumber/messages-go/v10 v10.0.3
 	github.com/docker/go-units v0.4.0
+	github.com/gbraad/go9p v0.0.0-20220623042348-8325e1d233b3
 	github.com/gorilla/handlers v1.5.1
 	github.com/h2non/filetype v1.1.3
 	github.com/hectane/go-acl v0.0.0-20190604041725-da78bae5fc95

@@ -18,6 +18,7 @@ import (
 	"github.com/code-ready/crc/pkg/crc/constants"
 	"github.com/code-ready/crc/pkg/crc/daemonclient"
 	"github.com/code-ready/crc/pkg/crc/logging"
+	"github.com/code-ready/crc/pkg/crc/mount"
 	"github.com/containers/gvisor-tap-vsock/pkg/types"
 	"github.com/containers/gvisor-tap-vsock/pkg/virtualnetwork"
 	"github.com/docker/go-units"
@@ -143,6 +144,7 @@ func run(configuration *types.Configuration) error {
 		mux := http.NewServeMux()
 		mux.Handle("/network/", http.StripPrefix("/network", vn.Mux()))
 		mux.Handle("/api/", http.StripPrefix("/api", api.NewMux(config, newMachine(), logging.Memory, segmentClient)))
+		mux.Handle("/mount/", http.StripPrefix("/mount", mount.NewMux()))
 		if err := http.Serve(listener, handlers.LoggingHandler(os.Stderr, mux)); err != nil {
 			errCh <- errors.Wrap(err, "api http.Serve failed")
 		}
