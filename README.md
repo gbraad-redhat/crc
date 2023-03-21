@@ -4,7 +4,7 @@ Gerard Braad's CRC fork
 This is my workspace
 
   * [GitHub](https://github.com/gbraad-redhat/crc)
-  * [GitLab](https://gitlab.com/gbraad/crc)
+  * [GitLab](https://gitlab.com/gbraad-redhat/crc)
 
 Upstream is available at
 
