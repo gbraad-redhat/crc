@@ -164,8 +164,8 @@ func run(configuration *types.Configuration) error {
 		mux := gatewayAPIMux()
 		s := &http.Server{
 			Handler:      handlers.LoggingHandler(os.Stderr, mux),
-			ReadTimeout:  10 * time.Second,
-			WriteTimeout: 10 * time.Second,
+			ReadTimeout:  0,
+			WriteTimeout: 0,
 		}
 		if err := s.Serve(ln); err != nil {
 			errCh <- errors.Wrap(err, "gateway http.Serve failed")
