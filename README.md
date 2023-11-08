@@ -3,12 +3,15 @@ Gerard Braad's CRC fork
 
 This is my workspace
 
-  * [GitHub](https://github.com/gbraad-redhat/crc)
-  * [GitLab](https://gitlab.com/gbraad-redhat/crc)
+  * [GitHub](https://github.com/gbraad-redhat/crc),
+    Open in [Gitpod workspace](https://gitpod.io/#https://github.com/gbraad-redhat/crc)
+  * [GitLab](https://gitlab.com/gbraad-redhat/crc),
+    Open in [Gitpod workspace](https://gitpod.io/#https://gitlab.com/gbraad-redhat/crc)
 
 Upstream is available at
 
-  * [GitHub](https://github.com/crc-orgy/crc)
+  * [GitHub](https://github.com/crc-orgy/crc),
+    Open in [Gitpod workspace](https://gitpod.io/#https://github.com/crc-orgy/crc)
 
 
 Authors
