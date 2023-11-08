@@ -10,8 +10,8 @@ This is my workspace
 
 Upstream is available at
 
-  * [GitHub](https://github.com/crc-orgy/crc),
-    Open in [Gitpod workspace](https://gitpod.io/#https://github.com/crc-orgy/crc)
+  * [GitHub](https://github.com/crc-org/crc),
+    Open in [Gitpod workspace](https://gitpod.io/#https://github.com/crc-org/crc)
 
 
 Authors
