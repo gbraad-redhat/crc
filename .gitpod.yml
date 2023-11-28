@@ -1,0 +1,27 @@
+image:
+  file: /gitpod/Dockerfile
+
+tasks:
+  - init: >
+      ./gitpod/install.sh
+  - name: docker
+    command: |
+      sudo dnf install -y docker
+  - name: sshd
+    command: |
+      sudo ssh-keygen -A && sudo /usr/sbin/sshd
+      curl https://github.com/gbraad.keys | tee -a ~/.ssh/authorized_keys
+  - name: tailscale
+    command: |
+      sudo --preserve-env=TAILSCALE_AUTHKEY /etc/init.d/tailscaled start
+
+ports:
+  - port: 22
+    onOpen: ignore
+  - port: 6080
+    onOpen: open-preview
+
+vscode:
+  extensions:
+    - ms-vscode.Theme-TomorrowKit
+    - tailscale.vscode-tailscale
