@@ -1,11 +1,8 @@
 #!/bin/sh
 
-# clean workspace folder
-rm -rf /workspace/crc
-mkdir /workspace/crc
-ln -s /workspace/crc ~/Projects
-git init /workspace/crc
-
+# Set workdir as usual
+mkdir ~/Projects
+ln -s /workspace/crc ~/Projects/crc
 cd ~/Projects
 
 exit 0
